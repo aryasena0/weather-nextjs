@@ -28,7 +28,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold">Current Weather .</h1>
     <br />      
         <div className="p-4 bg-zinc-200 rounded-xl lg:w-max lg:p-8">
-          <input type="text" name="city" id="cityname" onChange={(e) => setCity(e.target.value)} className='bg-slate-800 px-4 w-[82.4%] py-1 rounded-md lg:w-[230px]'/>
+          <input type="text" name="city" id="cityname" onChange={(e) => setCity(e.target.value)} className='bg-slate-800 px-4 w-[70%] py-1 rounded-md lg:w-[230px]'/>
           <button type="submit" onClick={handleClick} className="px-4 py-1 bg-slate-800 text-md rounded-md ml-2 mb-2">Find</button>
           <Card name={data.name} temprature={data.temprature} desc={data.desc} city={city}/>
         </div>
